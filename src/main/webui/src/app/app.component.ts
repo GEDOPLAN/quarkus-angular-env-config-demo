@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {RouterLink, RouterOutlet} from '@angular/router';
 import {NgForOf} from "@angular/common";
+import {KeycloakService} from "keycloak-angular";
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -9,6 +10,9 @@ import {NgForOf} from "@angular/common";
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+
+  constructor(private keycloakService: KeycloakService) {
+  }
 
   title = 'Quinoa Demo Application'
 

@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import {HomeComponent} from "./home/home.component";
 import {DetailComponent} from "./detail/detail.component";
+import {KeycloakAuthGuard} from "keycloak-angular";
 
 export const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},

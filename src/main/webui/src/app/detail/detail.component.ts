@@ -12,7 +12,9 @@ import {EnvConfigService} from "../env-config/env-config.service";
 })
 export class DetailComponent implements OnInit {
   envConfig = {
-    runtimeEnvironment: ''
+    keycloakFrontendUrl: '',
+    keycloakRealm: '',
+    keycloakClient: ''
   } as EnvConfig;
 
   constructor(private envConfigService: EnvConfigService) { }

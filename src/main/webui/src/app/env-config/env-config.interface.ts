@@ -1,3 +1,5 @@
 export interface EnvConfig {
-  runtimeEnvironment: string;
+  keycloakFrontendUrl: string;
+  keycloakRealm: string;
+  keycloakClient: string;
 }
